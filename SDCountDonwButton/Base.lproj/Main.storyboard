@@ -19,6 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggb-3a-YEp" customClass="SDCountDownButton">
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="0Dd-r7-24M"/>
                                 </constraints>
@@ -27,13 +28,17 @@
                                     <action selector="oneTapAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qD6-17-SL9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZV-QQ-rrW" customClass="SDCountDownButton">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZV-QQ-rrW" customClass="SDCountDownButton">
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="ceh-HF-zSm"/>
                                 </constraints>
                                 <state key="normal" title="获取验证码">
                                     <color key="titleColor" red="0.95737892670000002" green="0.1717917226" blue="0.25564000910000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="finishedString" value="大老头"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="twoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vwz-19-1sD"/>
                                 </connections>

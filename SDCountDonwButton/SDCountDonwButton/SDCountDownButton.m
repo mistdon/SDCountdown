@@ -9,19 +9,28 @@
 #import "SDCountDownButton.h"
 
 @interface SDCountDownButton ()
+
 @property (nonatomic) dispatch_source_t timer;
 @property (nonatomic) dispatch_queue_t queue;
 @property (nonatomic, readonly) void *keyContext;
 @property (nonatomic, copy) void(^completionBlock)();
 @property (nonatomic, copy) NSString *(^countdownChangingFormatter)(NSTimeInterval second);
-@property (nonatomic, copy) NSString *(^countdownFinishedFormatter)();
+
 @end
+
+static NSString *const KDefaultTitle = @"获取验证码";
 
 @implementation SDCountDownButton
 
 #define Weak_Self   __weak typeof(self)weakSelf       = self;
 #define Strong_Self __weak typeof(weakSelf)strongSelf = weakSelf;
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder{
+    if (self = [super initWithCoder:aDecoder]) {
+        [self setTitle:KDefaultTitle forState:UIControlStateNormal];
+    }
+    return self;
+}
 - (dispatch_queue_t)queue{
     if (!_queue) {
         _queue = dispatch_queue_create(NSStringFromClass([self class]).UTF8String, DISPATCH_QUEUE_SERIAL);
@@ -39,9 +48,8 @@
                 time -= 1.0;
                 dispatch_async(dispatch_get_main_queue(), ^{
                     weakSelf.userInteractionEnabled = NO;
-                    NSString *title = weakSelf.countdownChangingFormatter ? weakSelf.countdownChangingFormatter(time) :[NSString stringWithFormat:@"%.0f秒",time];
+                    NSString *title = weakSelf.countdownChangingFormatter ? weakSelf.countdownChangingFormatter(time) :[NSString stringWithFormat:@"%.0f S",time];
                     [weakSelf setTitle:title forState:UIControlStateNormal];
-                    NSLog(@"time = %lf",time);
                 });
             }else{
                 [weakSelf stop];
@@ -84,7 +92,7 @@
             Strong_Self
             if (strongSelf) {
                 strongSelf.userInteractionEnabled = YES;
-                NSString *title = strongSelf.countdownFinishedFormatter ? strongSelf.countdownFinishedFormatter() : @"重新获取";
+                NSString *title = strongSelf.finishedString ? strongSelf.finishedString : KDefaultTitle;
                 [strongSelf setTitle:title forState:UIControlStateNormal];
                 if (strongSelf.completionBlock) {
                     strongSelf.completionBlock();
@@ -111,7 +119,5 @@
 - (void)setChangingFormatter:(NSString *(^)(NSTimeInterval))changingFormatter{
     self.countdownChangingFormatter = changingFormatter;
 }
-- (void)setFinishFormatter:(NSString *(^)())finishFormatter{
-    self.countdownFinishedFormatter = finishFormatter;
-}
+
 @end

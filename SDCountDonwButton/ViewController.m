@@ -23,7 +23,7 @@
     [super viewDidLoad];
 
     self.btn = [[SDCountDownButton alloc] initWithFrame:CGRectMake((self.view.bounds.size.width-200)/2.0, 300, 200, 50)];
-    [self.btn setTitle:@"获取验证码" forState:UIControlStateNormal];
+    [self.btn setTitle:@"要获取验证码" forState:UIControlStateNormal];
     [self.btn setBackgroundColor:[UIColor blueColor]];
     [self.view addSubview:self.btn ];
     [self.btn addTarget:self action:@selector(tapaction:) forControlEvents:UIControlEventTouchUpInside];
@@ -32,16 +32,16 @@
     [self.btn setChangingFormatter:^NSString *(NSTimeInterval second) {
         return [NSString stringWithFormat:@"%.0lf S", second];
     }];
-    [self.btn setFinishFormatter:^NSString *{
-        return @"重新开始吧";
-    }];
+
     [self.btn completed:^{
         NSLog(@"倒计时完毕");
     }];
-    
+    [self.one setTitle:@"Game" forState:UIControlStateNormal];
     [self.one setChangingFormatter:^NSString *(NSTimeInterval second) {
         return [NSString stringWithFormat:@"重新发送(%.0lf)", second];
     }];
+    self.two.layer.cornerRadius = 10;
+    self.two.layer.borderColor =  [UIColor blueColor].CGColor;
     
 }
 - (IBAction)oneTapAction:(id)sender {
