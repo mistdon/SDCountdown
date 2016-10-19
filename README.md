@@ -1,6 +1,6 @@
 # SDCountdown
-Countdown Button, with GCD, what you can do with code or XIB,
-
+Countdown Button, with GCD, what you can do with code or XIB.
+用GCD实现倒计时Button, 可以在多线程中使用，不用担心循环引用。可以用纯代码或者Xib创建。
 # How to Use SDCountdownButton
 * Install with CocoaPods: 'pod SDCountdownButton'
 * Manual import
@@ -20,9 +20,8 @@ Countdown Button, with GCD, what you can do with code or XIB,
 //设置倒计时结束后的title
 [self.one setFinishedString:@"涨涨涨"];
 ```
-或者在Xib中直接设置
-![https://github.com/momo13014/SDCountdown/blob/master/ScreentShot/finishString.png)]
-
+或者在Xib中直接设置finishString
+![(png)](https://github.com/momo13014/SDCountdown/blob/master/ScreentShot/finishString.png)
 ````
 //倒计时结束后的回调
 [SDCountDownButton completed:^{
