@@ -37,7 +37,7 @@
                                     <color key="titleColor" red="0.95737892670000002" green="0.1717917226" blue="0.25564000910000001" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="finishedString" value="大老头"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="finishedString" value="重新获取"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="twoAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vwz-19-1sD"/>

@@ -37,11 +37,14 @@
         NSLog(@"倒计时完毕");
     }];
     [self.one setTitle:@"Game" forState:UIControlStateNormal];
+    [self.one setFinishedString:@"涨涨涨"];
+    
     [self.one setChangingFormatter:^NSString *(NSTimeInterval second) {
         return [NSString stringWithFormat:@"重新发送(%.0lf)", second];
     }];
     self.two.layer.cornerRadius = 10;
     self.two.layer.borderColor =  [UIColor blueColor].CGColor;
+    
     
 }
 - (IBAction)oneTapAction:(id)sender {
