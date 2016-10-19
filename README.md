@@ -20,7 +20,7 @@ Countdown Button, with GCD, what you can do with code or XIB.
 //设置倒计时结束后的title
 [self.one setFinishedString:@"涨涨涨"];
 ```
-或者在Xib中直接设置finishString
+或者在Xib中直接设置finishString  
 ![(png)](https://github.com/momo13014/SDCountdown/blob/master/ScreentShot/finishString.png)
 ````
 //倒计时结束后的回调
