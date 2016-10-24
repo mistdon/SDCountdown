@@ -10,9 +10,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.ios.deployment_target = '8.0'
   s.license      = 'MIT'
-  s.source       = { :git => "https://github.com/momo13014/SDCountdown.git",:tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/momo13014/SDCountdown.git",:tag => 'v1.0' }
   s.source_files  = 'SDCountDonwButton/*.{h,m}'
   s.frameworks    = 'UIKit'
-  s.requires_arc = true
+
 
 end
