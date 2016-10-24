@@ -61,7 +61,7 @@
 		3B3362151DB5C50700D48503 /* SDCountDonwButton */ = {
 			isa = PBXGroup;
 			children = (
-				3B33622E1DB5C53A00D48503 /* SDCountDonwButton */,
+				3B33622E1DB5C53A00D48503 /* SDCountDownButton */,
 				3B3362191DB5C50700D48503 /* AppDelegate.h */,
 				3B33621A1DB5C50700D48503 /* AppDelegate.m */,
 				3B33621C1DB5C50700D48503 /* ViewController.h */,
@@ -83,12 +83,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3B33622E1DB5C53A00D48503 /* SDCountDonwButton */ = {
+		3B33622E1DB5C53A00D48503 /* SDCountDownButton */ = {
 			isa = PBXGroup;
 			children = (
 				3B33622F1DB5C55000D48503 /* SDCountDownButton.h */,
 				3B3362301DB5C55000D48503 /* SDCountDownButton.m */,
 			);
+			name = SDCountDownButton;
 			path = SDCountDonwButton;
 			sourceTree = "<group>";
 		};
@@ -321,6 +322,7 @@
 				3B33622C1DB5C50700D48503 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
