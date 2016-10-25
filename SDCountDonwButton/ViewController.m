@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "SDCountDonwButton/SDCountDownButton.h"
+#import "SDCountDownButton/SDCountDownButton.h"
 
 
 @interface ViewController ()

@@ -11,6 +11,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.license      = 'MIT'
   s.source       = { :git => "https://github.com/momo13014/SDCountdown.git",:tag => s.version.to_s }
-  s.source_files  = 'SDCountDownButton/*.{h,m}'
-  s.module.name   = 'SDCountDownButton'
+  s.source_files  = 'SDCountDonwButton/SDCountDownButton/*.{h,m}'
+  s.frameworks    = 'UIKit'
 end
