@@ -13,7 +13,7 @@
 		3B3362211DB5C50700D48503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B33621F1DB5C50700D48503 /* Main.storyboard */; };
 		3B3362231DB5C50700D48503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3362221DB5C50700D48503 /* Assets.xcassets */; };
 		3B3362261DB5C50700D48503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3362241DB5C50700D48503 /* LaunchScreen.storyboard */; };
-		3B624EAF1DBEF28F00F1EC1E /* SDCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B624EAE1DBEF28F00F1EC1E /* SDCountDownButton.m */; };
+		3B624EB51DBEFCE400F1EC1E /* SDCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B624EB41DBEFCE400F1EC1E /* SDCountDownButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		3B3362221DB5C50700D48503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B3362251DB5C50700D48503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B3362271DB5C50700D48503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B624EAD1DBEF28F00F1EC1E /* SDCountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDCountDownButton.h; path = SDCountDonwButton/SDCountDownButton/SDCountDownButton.h; sourceTree = SOURCE_ROOT; };
-		3B624EAE1DBEF28F00F1EC1E /* SDCountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDCountDownButton.m; path = SDCountDonwButton/SDCountDownButton/SDCountDownButton.m; sourceTree = SOURCE_ROOT; };
+		3B624EB31DBEFCE400F1EC1E /* SDCountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCountDownButton.h; sourceTree = "<group>"; };
+		3B624EB41DBEFCE400F1EC1E /* SDCountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCountDownButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +61,7 @@
 		3B3362151DB5C50700D48503 /* SDCountDonwButton */ = {
 			isa = PBXGroup;
 			children = (
-				3B33622E1DB5C53A00D48503 /* SDCountDownButton */,
+				3B624EB21DBEFCE400F1EC1E /* SDCountDownButton */,
 				3B3362191DB5C50700D48503 /* AppDelegate.h */,
 				3B33621A1DB5C50700D48503 /* AppDelegate.m */,
 				3B33621C1DB5C50700D48503 /* ViewController.h */,
@@ -83,14 +83,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3B33622E1DB5C53A00D48503 /* SDCountDownButton */ = {
+		3B624EB21DBEFCE400F1EC1E /* SDCountDownButton */ = {
 			isa = PBXGroup;
 			children = (
-				3B624EAD1DBEF28F00F1EC1E /* SDCountDownButton.h */,
-				3B624EAE1DBEF28F00F1EC1E /* SDCountDownButton.m */,
+				3B624EB31DBEFCE400F1EC1E /* SDCountDownButton.h */,
+				3B624EB41DBEFCE400F1EC1E /* SDCountDownButton.m */,
 			);
-			name = SDCountDownButton;
-			path = SDCountDonwButton;
+			path = SDCountDownButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,7 +165,7 @@
 			files = (
 				3B33621E1DB5C50700D48503 /* ViewController.m in Sources */,
 				3B33621B1DB5C50700D48503 /* AppDelegate.m in Sources */,
-				3B624EAF1DBEF28F00F1EC1E /* SDCountDownButton.m in Sources */,
+				3B624EB51DBEFCE400F1EC1E /* SDCountDownButton.m in Sources */,
 				3B3362181DB5C50700D48503 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
