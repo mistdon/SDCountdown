@@ -1,0 +1,6 @@
+framework module SDCountDownButton {
+  umbrella header "SDCountDownButton.h"
+
+  export *
+  module * { export * }
+}

@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-
+NS_ASSUME_NONNULL_BEGIN
 
 @interface SDCountDownButton : UIButton
-
 
 /**
  A Boolean value indicates whether the count down is currently valid.
@@ -22,8 +21,6 @@
  The normal state' title, Default is "获取验证码"
  */
 @property (nonatomic, copy) IBInspectable NSString *finishedString;
-
-
 
 /**
  Start the count down the the given time interval.
@@ -52,3 +49,5 @@
 - (void)completed:(void(^)())completionBlock;
 
 @end
+
+NS_ASSUME_NONNULL_END
