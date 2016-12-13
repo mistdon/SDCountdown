@@ -1,14 +1,20 @@
+[![](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![CocoaPods compatible](https://img.shields.io/cocoapods/v/SDCountDownButton.svg)](https://cocoapods.org/pods/SDCountDownButton)
+
+
 # SDCountdown
 Countdown Button, with GCD, what you can do with code or XIB.    
 用GCD实现倒计时Button, 可以在多线程中使用，不用担心循环引用。   
 可以用纯代码或者Xib创建。
 
-# 如何安装How to install
-  * cocoapods 安装
+# How to install
+  * Cocoapods 安装
     'pod SDCountdownButton'
   * 手动安装
     将SDCountdown.h/m拖到工程中，手动引用
-
+  * Carthage
+    github "momo13014/SDCountDownButton"
+    
 # How to Use SDCountdownButton
  ![(Demo)](https://github.com/momo13014/SDCountdown/blob/master/ScreentShot/demo.gif)
 
